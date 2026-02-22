@@ -1,0 +1,9 @@
+Activate Terminal Command
+.\.venv\Scripts\Activate.ps1
+
+
+
+pip install -r requirements.txt
+python -m pip install -r requirements.txt
+
+python.exe -m pip install --upgrade pip

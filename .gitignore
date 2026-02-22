@@ -1,0 +1,59 @@
+# ===============================
+# Python virtual environments
+# ===============================
+.venv/
+venv/
+env/
+
+# ===============================
+# Environment variables (SECRETS)
+# ===============================
+.env
+
+# ===============================
+# Python cache / compiled files
+# ===============================
+__pycache__/
+*.py[cod]
+*$py.class
+
+# ===============================
+# Jupyter Notebook checkpoints
+# ===============================
+.ipynb_checkpoints/
+
+# ===============================
+# IDE / Editor settings
+# ===============================
+.idea/
+.vscode/
+.spyderproject
+.spyproject
+
+# ===============================
+# OS generated files
+# ===============================
+.DS_Store
+Thumbs.db
+
+# ===============================
+# ML artifacts (project-specific)
+# ===============================
+models/*.pkl
+models/*.joblib
+models/*.onnx
+
+# ===============================
+# Data folders (OPTIONAL)
+# Keep folders with .gitkeep
+# ===============================
+data/raw/*
+data/interim/*
+data/processed/*
+
+# ===============================
+# Logs / outputs
+# ===============================
+logs/
+outputs/
+reports/*.log
