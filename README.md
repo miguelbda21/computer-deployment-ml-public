@@ -30,16 +30,18 @@ This repository is structured to support:
 
 ## Project Structure
 
-├── notebooks/ # Exploratory analysis and experimentation
-├── reports/ # Generated reports and outputs
-├── src/ # Core pipeline logic (data ingestion, preprocessing, modeling)
-├── tests/ # Unit and pipeline validation tests
-├── requirements.txt # Project dependencies
-├── .gitignore # Files excluded from version control
-└── README.md # Project documentation
+```
+.
+├── notebooks/        # Exploratory analysis and experimentation
+├── reports/          # Generated reports and outputs
+├── src/              # Core pipeline logic (data ingestion, preprocessing, modeling)
+├── tests/            # Unit and pipeline validation tests
+├── requirements.txt  # Project dependencies
+├── .gitignore        # Files excluded from version control
+└── README.md         # Project documentation
+```
 
 
----
 
 ## Engineering Concepts Demonstrated
 
