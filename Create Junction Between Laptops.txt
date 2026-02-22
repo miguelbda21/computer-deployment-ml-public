@@ -1,0 +1,34 @@
+What “Junction” means
+
+A junction is a Windows filesystem “shortcut at the folder level” (a reparse point) that makes:
+
+C:\MLProjects\Computer Deployment ML\computer-deployment-ml
+
+actually point to:
+
+C:\Users\migue\OneDrive\ML Project\Computer Deployment ML\computer-deployment-ml
+
+Apps think they are reading C:\MLProjects\..., but Windows transparently redirects to the real folder.
+
+✅ This is the right approach when you want identical paths across machines.
+
+Create the same fixed path on BOTH laptops
+
+On each laptop, do this:
+
+Create the parent folder:
+
+mkdir "C:\MLProjects\Computer Deployment ML"
+
+Create the junction (run CMD as Administrator):
+
+On migue laptop:
+
+mklink /J "C:\MLProjects\Computer Deployment ML\computer-deployment-ml" "C:\Users\migue\OneDrive\ML Project\Computer Deployment ML\computer-deployment-ml"
+
+On marod laptop:
+
+mklink /J "C:\MLProjects\Computer Deployment ML\computer-deployment-ml" "C:\Users\marod\OneDrive\ML Project\Computer Deployment ML\computer-deployment-ml"
+
+Now both laptops have the exact same usable path:
+C:\MLProjects\Computer Deployment ML\computer-deployment-ml
