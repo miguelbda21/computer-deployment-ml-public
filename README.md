@@ -29,6 +29,7 @@ This repository is structured to support:
 ---
 
 ## Project Structure
+
 ├── notebooks/ # Exploratory analysis and experimentation
 ├── reports/ # Generated reports and outputs
 ├── src/ # Core pipeline logic (data ingestion, preprocessing, modeling)
